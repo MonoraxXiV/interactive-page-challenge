@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Archery Event</title>
+    <script src="https://kit.fontawesome.com/97e98690fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<header>
-    <h1>Archery Fair</h1>
+<header class="text-center">
+    <h1 class="text-center">Archery Fair</h1>
     <p>Welcome to the Archery Fair, our yearly medieval archery event!<br>
         We are happy to celebrate with you our 25th anniversary. Expect a day full of excitement, history and of course
         : precision!
@@ -17,125 +20,143 @@
 
 <section>
     <section class="photoSlideshow">
-        <div class="slideshowImgCtn">
+        <div class="slideshowImgCtn text-center my-5">
+            <button class="arrow btn btn-warning text-white" id="previous">&#10094;</button>
             <img src="https://pbs.twimg.com/media/D8FpPuQWkAMjMQA.jpg" alt="foto" class="slideshowImg" id="slideImg">
+            <button class="arrow btn btn-warning text-white" id="next">&#10095;</button>
         </div>
 
-        <div class="buttonCtn">
-            <button id="previous">&#10094;</button>
-            <button id="next">&#10095;</button>
-        </div>
     </section>
 
-    <img src="https://lh2.googleusercontent.com/proxy/yeiQCkCuldMB5MIVhmdOIA4yEtY0CPqxnCjUYZ5BN93wL1O3RSLrybG4cyeDBD2344XC8XIUWseDugO21GOELsk8Oyy_dY5BBnk"
-         alt="Women archers in medieval outfit">
-    <img src="https://images-ext-2.discordapp.net/external/s_wGZZrphewPnkA1QT5SfF4E6Cf0sTVwbSvRmCwW1BY/%3Fixlib%3Drb-1.2.1%26ixid%3DeyJhcHBfaWQiOjEyMDd9%26auto%3Dformat%26fit%3Dcrop%26w%3D939%26q%3D80/https/images.unsplash.com/photo-1510925751334-0fe90906839b?width=772&height=1140"
-         alt="Kids doing archery">
-    <img src="https://pbs.twimg.com/media/D8FpPuQWkAMjMQA.jpg" alt="Medieval archery">
 
 </section>
 
-
-<button class="tabButton" data-target="summary">Summary</button>
-<button class="tabButton" data-target="details">Pratical Informations</button>
-<button class="tabButton" data-target="competition">Competition Information</button>
-<button class="tabButton" data-target="tickets">Tickets</button>
-<button class="tabButton" data-target="contact">Contact</button>
-
-
-<section class="tabInfo" id="summary">
-    <h2>Summary</h2>
-    <p>
-        Archery Faire is held by the Quiver.<br>
-        Our event will hold two types of competitions: Field archery and the 900 round.<br>
-        For the kids there will be an initiation to archery with skilled instructors.*<br>
-        During the day there will be performances by professional archers.<br>
-        On the premises there will be vendors with gear, traditional food and drinks.<br>
-
-        *kids younger than 6 cannot enter the initiations workshop.
-    </p>
-</section>
-
-<section class="tabInfo" id="details">
-    <h2>Pratical Informations</h2>
-    <ul>
-        <li>Where : Kalmthoutse Heide, meet up at the Vroente: Putsesteenweg 129 – B-2920 Kalmthout</li>
-        <li>What time: from 9 am to 6 pm.</li>
-        <li>Tickets: Registration will be at the main office until 10 am.</li>
-        <li>For entry tickets prices please refer to the Tickets tab.</li>
-    </ul>
-
-</section>
-
-<section class="tabInfo" id="competition">
-    <h2>Competition Information</h2>
-    <h3>Classes to compete in :</h3>
-
-    <p>900 round :<br>
-        30 arrows at the distances 60, 50, 40 meters for both men and women. The 122 cm face is used for all distances.
-    </p>
-
-    <h3>Time of each competition event:</h3>
-
-    <p>900 round: starts at 10:30 am at the shooting range.<br>
-        Field archery will be held from 3pm until 6pm in the marked zone.</p>
-
-    <p>Bring your own bow for the competitions</p>
-
-    <p>How to sign up : Registration will be at the main office until 10 am.</p>
-
-
-    </p>
-</section>
-
-<section class="tabInfo" id="tickets">
-    <h2>Tickets</h2>
-    <table>
-        <tr>
-            <th></th>
-            <th>With membership pass</th>
-            <th>Without membership pass</th>
-        </tr>
-        <tr>
-            <td>Kids (younger than 12)</td>
-            <td>Free</td>
-            <td>Free</td>
-        </tr>
-        <tr>
-            <td>Kids 12-18</td>
-            <td>€3</td>
-            <td>€5</td>
-        </tr>
-        <tr>
-            <td>Adults</td>
-            <td>€5</td>
-            <td>€8</td>
-        </tr>
-    </table>
-
-
-</section>
-
-<section class="tabInfo" id="contact">
-    <h2>Contact</h2>
-    <p id="formHandeling"></p>
-    <form action="">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value=""><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" value=""><br>
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message"></textarea><br>
-        <input type="submit" value="Submit" id="submit">
-    </form>
-
-</section>
-
-<ul>
-    <li>Number of participants: <span class="counter" id="nbParticipants">400</span></li>
-    <li>Vendors at the event: <span class="counter" id="vendors">200</span></li>
-    <li>Professional archers participating: <span class="counter" id="professionals">300</span></li>
+<ul class="nav nav-tabs">
+    <li class="nav-item mr-1">
+        <button class="tabButton nav-link" data-target="summary">Summary</button>
+    </li>
+    <li class="nav-item mr-1">
+        <button class="tabButton nav-link" data-target="details">Pratical Informations</button>
+    </li>
+    <li class="nav-item mr-1">
+        <button class="tabButton nav-link" data-target="competition">Competition Information</button>
+    </li>
+    <li class="nav-item mr-1">
+        <button class="tabButton nav-link" data-target="tickets">Tickets</button>
+    </li>
+    <li class="nav-item mr-1">
+        <button class="tabButton nav-link" data-target="contact">Contact</button>
+    </li>
 </ul>
+
+
+<section class="tabInfo card" id="summary">
+    <div class="card-body">
+        <h2>Summary</h2>
+        <p>
+            Archery Fair is held by the Quiver.<br>
+            Our event will hold two types of competitions: Field archery and the 900 round.<br>
+            For the kids there will be an initiation to archery with skilled instructors.*<br>
+            During the day there will be performances by professional archers.<br>
+            On the premises there will be vendors with gear, traditional food and drinks.<br>
+
+            *kids younger than 6 cannot enter the initiations workshop.
+        </p>
+    </div>
+</section>
+
+<section class="tabInfo card" id="details">
+    <div class="card-body">
+        <h2>Pratical Informations</h2>
+        <ul>
+            <li>Where : Kalmthoutse Heide, meet up at the Vroente: Putsesteenweg 129 – B-2920 Kalmthout</li>
+            <li>What time: from 9 am to 6 pm.</li>
+            <li>Tickets: Registration will be at the main office until 10 am.</li>
+            <li>For entry tickets prices please refer to the Tickets tab.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="tabInfo card" id="competition">
+    <div class="card-body">
+        <h2>Competition Information</h2>
+        <h3>Classes to compete in :</h3>
+
+        <p>900 round :<br>
+            30 arrows at the distances 60, 50, 40 meters for both men and women. The 122 cm face is used for all
+            distances.
+        </p>
+
+        <h3>Time of each competition event:</h3>
+
+        <p>900 round: starts at 10:30 am at the shooting range.<br>
+            Field archery will be held from 3pm until 6pm in the marked zone.</p>
+
+        <p>Bring your own bow for the competitions</p>
+
+        <p>How to sign up : Registration will be at the main office until 10 am.</p>
+
+
+        </p>
+    </div>
+</section>
+
+<section class="tabInfo card" id="tickets">
+    <div class="card-body">
+        <h2 class="mb-2">Tickets</h2>
+        <table class="table table-hover text-white text-center">
+            <tr>
+                <th scope="row"></th>
+                <th>With membership pass</th>
+                <th>Without membership pass</th>
+            </tr>
+            <tr>
+                <td scope="row" class="text-left">Kids (younger than 12)</td>
+                <td>Free</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td scope="row" class="text-left">Kids 12-18</td>
+                <td>€3</td>
+                <td>€5</td>
+            </tr>
+            <tr>
+                <td class="text-left">Adults</td>
+                <td>€5</td>
+                <td>€8</td>
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+<section class="tabInfo card" id="contact">
+    <div class="card-body">
+        <h2>Contact</h2>
+        <p id="formHandeling"></p>
+        <form action="">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value=""><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value=""><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input class="btn btn-secondary" type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</section>
+
+<div id="number" class="d-flex justify-content-around text-center my-5">
+    <div><i class="fas fa-users"></i>
+        <p class="counter m-0" id="nbParticipants">400</p>
+        <p>Participants</p></div>
+    <div><i class="fas fa-store"></i>
+        <p class="counter m-0" id="vendors">200</p>
+        <p>Vendors</p></div>
+    <div><i class="fas fa-bullseye"></i>
+        <p class="counter m-0" id="professionals">300</p>
+        <p>Professional Archers</p></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

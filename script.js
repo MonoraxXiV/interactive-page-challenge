@@ -1,6 +1,6 @@
 let tabButtons = document.getElementsByClassName('tabButton');
 let tabSections = document.getElementsByClassName('tabInfo');
-let imageSources=['resources/archery1.jpg','resources/archery2.jpg','resources/archery3.jpg'];
+let imageSources=['resources/archery1.jpg','resources/archery2.jpg','resources/archery3.jpg','resources/archery4.jpeg','resources/archery5.jpg','resources/archery6.jpeg'];
 let index=0;
 
 function hideTabsExceptFirst(){
