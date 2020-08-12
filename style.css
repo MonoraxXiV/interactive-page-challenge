@@ -1,0 +1,33 @@
+body {
+    width: 90%;
+    margin: auto;
+    background: rgb(63, 202, 123);
+    background: linear-gradient(344deg, rgba(63, 202, 123, 1) 44%, rgba(255, 255, 255, 1) 45%, rgba(131, 203, 65, 1) 47%, rgba(48, 191, 147, 1) 55%, rgba(2, 159, 220, 1) 83%);
+    color: white;
+    font-size: 18px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+textarea {
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#submit {
+    width: 100px;
+    text-align: center;
+    margin-left: 100px;
+
+}
