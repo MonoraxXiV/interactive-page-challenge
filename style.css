@@ -1,5 +1,8 @@
-@font-face {
-
+@font-face {font-family: "Ancien Medium";
+    src: local("Ancient Medium"), url('resources/Ancient-Medium.ttf');
+}
+h1 {
+    font-family: "Ancien Medium";
 }
 body {
     width: 90%;
@@ -11,10 +14,10 @@ body {
 }
 
 
-#contact
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 input {

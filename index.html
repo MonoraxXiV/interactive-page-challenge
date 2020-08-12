@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Archery Event</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 <body>
 <header>
@@ -36,14 +36,14 @@
 </section>
 
 
-<button data-target="summary">Summary</button>
-<button data-target="details">Pratical Informations</button>
-<button data-target="competition">Competition Information</button>
-<button data-target="tickets">Tickets</button>
-<button data-target="contact">Contact</button>
+<button class="tabButton" data-target="summary">Summary</button>
+<button class="tabButton" data-target="details">Pratical Informations</button>
+<button class="tabButton" data-target="competition">Competition Information</button>
+<button class="tabButton" data-target="tickets">Tickets</button>
+<button class="tabButton" data-target="contact">Contact</button>
 
 
-<section id="summary">
+<section class="tabInfo" id="summary">
     <h2>Summary</h2>
     <p>
         Archery Faire is held by the Quiver.<br>
@@ -56,7 +56,7 @@
     </p>
 </section>
 
-<section id="details">
+<section class="tabInfo" id="details">
     <h2>Pratical Informations</h2>
     <ul>
         <li>Where : Kalmthoutse Heide, meet up at the Vroente: Putsesteenweg 129 – B-2920 Kalmthout</li>
@@ -67,7 +67,7 @@
 
 </section>
 
-<section id="competition">
+<section class="tabInfo" id="competition">
     <h2>Competition Information</h2>
     <h3>Classes to compete in :</h3>
 
@@ -88,7 +88,7 @@
     </p>
 </section>
 
-<section id="tickets">
+<section class="tabInfo" id="tickets">
     <h2>Tickets</h2>
     <table>
         <tr>
@@ -116,7 +116,7 @@
 
 </section>
 
-<section id="contact">
+<section class="tabInfo" id="contact">
     <h2>Contact</h2>
     <p id="formHandeling"></p>
     <form action="">
@@ -136,6 +136,6 @@
     <li>Vendors at the event: <span class="counter" id="vendors">200</span></li>
     <li>Professional archers participating: <span class="counter" id="professionals">300</span></li>
 </ul>
-
+<script src="script.js"></script>
 </body>
 </html>
