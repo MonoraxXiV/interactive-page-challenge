@@ -18,6 +18,7 @@
 
 h1 {
     font-family: "Ancien Medium";
+    font-size: 7rem;
 }
 body {
     width: 90%;
@@ -25,7 +26,7 @@ body {
     background: rgb(63, 202, 123);
     background: linear-gradient(344deg, rgba(63, 202, 123, 1) 44%, rgba(255, 255, 255, 1) 45%, rgba(131, 203, 65, 1) 47%, rgba(48, 191, 147, 1) 55%, rgba(2, 159, 220, 1) 83%);
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 
