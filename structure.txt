@@ -1,0 +1,11 @@
+- Find 3 good pictures about archery on top
+- Intro text
+- Tabs:
+    - Summary of the event
+    - Practical info
+    - Contact form
+- Numbers:
+    - Number of participants
+    - Vendors at the event
+    - Professional archers participating
+
